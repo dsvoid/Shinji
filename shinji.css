@@ -6,23 +6,14 @@ body {
 }
 
 .media {
-    width: 100%;
     max-width: 960px;
+    max-height: 720px;
     margin: 0 auto;
-    height: calc(100% - 32px);
     background-color: #a11;
 }
 
-.menu {
-    width: 100%;
-    height: 32px;
-    background-color: black;
-    flex-grow: 0;
-    position: absolute;
-    bottom: 0;
-}
-
-.shinji, .video {
+.shinji {
+	z-index: 2;
     max-height: calc(100% - 32px);
     max-width: 100%;
     position: absolute;
@@ -32,12 +23,23 @@ body {
     right: 0;
 }
 
-.shinji {
-    z-index: 2;
-}
-
 .video {
     z-index: 1;
-    background-color: #eee;
-    height: 100%;
+	max-height: calc(100% - 32px);
+	width: 100%;
+    position: absolute;
+    margin: auto;
+    bottom: 31px;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+	z-index: 2;
+    width: 100%;
+    height: 32px;
+    background-color: black;
+    flex-grow: 0;
+    position: absolute;
+    bottom: 0;
 }
