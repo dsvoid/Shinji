@@ -2,7 +2,7 @@ body {
 	width: 100%;
     height: 100%;
     margin: 0;
-	background-color: #800000;
+	background-color: #7E0000;
 }
 
 .media {
@@ -27,6 +27,7 @@ body {
     z-index: 1;
 	max-height: calc(100% - 32px);
 	width: 100%;
+	max-width: 960px;
     position: absolute;
     margin: auto;
     bottom: 31px;
@@ -42,4 +43,12 @@ body {
     flex-grow: 0;
     position: absolute;
     bottom: 0;
+	text-align: center;
+}
+
+.desc {
+	color: white;
+	font-family: courier;
+	position: relative;
+	top: 6px;
 }
